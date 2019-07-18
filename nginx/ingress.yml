@@ -1,0 +1,11 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  namespace: <YPUR_NAMESPACE>
+  annotations:
+    kubernetes.io/ingress.class: gce
+spec:
+  backend:
+    serviceName: nginx
+    servicePort: 80

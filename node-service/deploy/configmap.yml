@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: express-api-config
+  namespace: <YOUR_NAMESPACE>
+data:
+  value: "demojah"
